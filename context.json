@@ -1,0 +1,20 @@
+{
+  "name": "ledgo-platform",
+  "version": "1.5.0",
+  "description": "Complete LedGo AI Agent Engineering Platform context for LLMs. Provides tools and resources for managing kanbans (including blueprints), forms, databases, diagrams, documents, comments, widgets, and storage via the @ledgo/sdk.",
+  "author": "LedGo",
+  "tags": ["ledgo", "ai-agents", "platform", "sdk", "automation", "workflow"],
+  "contextType": "mcpbay-contexts-manager",
+  "deno": {
+    "permissions": {
+      "allowedPackages": ["npm:axios"],
+      "allowedExecutables": [],
+      "allowedEnvironments": ["MONDA_BASE_URL", "MONDA_TOKEN", "MONDA_ORGANIZATION_ID"],
+      "allowedReadDirs": [],
+      "allowedWriteDirs": [],
+      "allowNetDomains": ["*.functions.insforge.app", "*.function2.insforge.app"]
+    },
+    "extraArguments": [],
+    "timeout": 30000
+  }
+}
