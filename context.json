@@ -3,18 +3,51 @@
   "version": "1.5.0",
   "description": "Complete LedGo AI Agent Engineering Platform context for LLMs. Provides tools and resources for managing kanbans (including blueprints), forms, databases, diagrams, documents, comments, widgets, and storage via the @ledgo/sdk.",
   "author": "LedGo",
-  "tags": ["ledgo", "ai-agents", "platform", "sdk", "automation", "workflow"],
+  "tags": [
+    "ledgo",
+    "ai-agents",
+    "platform",
+    "sdk",
+    "automation",
+    "workflow"
+  ],
   "contextType": "mcpbay-contexts-manager",
   "deno": {
     "permissions": {
-      "allowedPackages": ["npm:axios"],
+      "allowedPackages": [
+        "npm:axios"
+      ],
       "allowedExecutables": [],
-      "allowedEnvironments": ["LEDGO_BASE_URL", "LEDGO_TOKEN", "LEDGO_ORGANIZATION_ID"],
+      "allowedEnvironments": [
+        "LEDGO_BASE_URL",
+        "LEDGO_TOKEN",
+        "LEDGO_ORGANIZATION_ID"
+      ],
       "allowedReadDirs": [],
       "allowedWriteDirs": [],
-      "allowNetDomains": ["*.functions.insforge.app", "*.function2.insforge.app"]
+      "allowNetDomains": [
+        "*.functions.insforge.app",
+        "*.function2.insforge.app"
+      ]
     },
     "extraArguments": [],
     "timeout": 30000
-  }
+  },
+  "variables": [
+    {
+      "name": "LEDGO_BASE_URL",
+      "description": "Base URL de la API de LedGo.",
+      "required": true
+    },
+    {
+      "name": "LEDGO_TOKEN",
+      "description": "Token de integración.",
+      "required": true
+    },
+    {
+      "name": "LEDGO_ORGANIZATION_ID",
+      "description": "ID de la organización. Si se omite, la API lo resuelve desde el token.",
+      "required": false
+    }
+  ]
 }
