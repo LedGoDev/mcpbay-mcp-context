@@ -1,6 +1,6 @@
 {
   "name": "ledgo-platform",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Complete LedGo AI Agent Engineering Platform context for LLMs. Provides tools and resources for managing kanbans (including blueprints), forms, databases, diagrams, documents, comments, widgets, and storage via the @ledgo/sdk.",
   "author": "LedGo",
   "tags": [
