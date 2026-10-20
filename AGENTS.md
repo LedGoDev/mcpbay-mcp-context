@@ -5,9 +5,9 @@ You have access to the **LedGo AI Agent Engineering Platform** through this cont
 ## How to use this context
 
 1. **Authentication**: All tools require two environment variables:
-   - `MONDA_BASE_URL` — The base URL of the LedGo API (e.g., `https://api.ledgo.ai`)
-   - `MONDA_TOKEN` — An integration token generated in the organization settings
-   - `MONDA_ORGANIZATION_ID` *(optional)* — The unique identifier of your organization. When omitted, the API resolves the organization from the token itself. The **project** (needed by the documents module) is also resolved from the token.
+   - `LEDGO_BASE_URL` — The base URL of the LedGo API (e.g., `https://api.ledgo.ai`)
+   - `LEDGO_TOKEN` — An integration token generated in the organization settings
+   - `LEDGO_ORGANIZATION_ID` *(optional)* — The unique identifier of your organization. When omitted, the API resolves the organization from the token itself. The **project** (needed by the documents module) is also resolved from the token.
 
 2. **Resources**: Read the relevant resource before using tools from a module:
    - `CONCEPT` — Understanding what LedGo is and does

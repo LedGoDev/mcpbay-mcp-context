@@ -1,15 +1,20 @@
 {
   "version": "5",
   "specifiers": {
+    "npm:@ledgo/sdk@*": "1.0.5",
     "npm:zod@*": "4.4.3"
   },
   "npm": {
+    "@ledgo/sdk@1.0.5": {
+      "integrity": "sha512-YJCvHDKUKA4F798iOh+VrCo2wrWzeH35Pt/AyWf/rsHL4SOQo8qs1MxGGOOdSwQekhPcSUyxTodaG8KACIkKwg=="
+    },
     "zod@4.4.3": {
       "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="
     }
   },
   "workspace": {
     "dependencies": [
+      "npm:@ledgo/sdk@*",
       "npm:zod@*"
     ]
   }

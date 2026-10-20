@@ -9,7 +9,7 @@
     "permissions": {
       "allowedPackages": ["npm:axios"],
       "allowedExecutables": [],
-      "allowedEnvironments": ["MONDA_BASE_URL", "MONDA_TOKEN", "MONDA_ORGANIZATION_ID"],
+      "allowedEnvironments": ["LEDGO_BASE_URL", "LEDGO_TOKEN", "LEDGO_ORGANIZATION_ID"],
       "allowedReadDirs": [],
       "allowedWriteDirs": [],
       "allowNetDomains": ["*.functions.insforge.app", "*.function2.insforge.app"]
