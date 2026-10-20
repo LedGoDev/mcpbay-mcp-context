@@ -4,10 +4,11 @@ You have access to the **LedGo AI Agent Engineering Platform** through this cont
 
 ## How to use this context
 
-1. **Authentication**: All tools require two environment variables:
-   - `LEDGO_BASE_URL` — The base URL of the LedGo API (e.g., `https://api.ledgo.ai`)
+1. **Authentication**: All tools require a single environment variable:
    - `LEDGO_TOKEN` — An integration token generated in the organization settings
-   - `LEDGO_ORGANIZATION_ID` *(optional)* — The unique identifier of your organization. When omitted, the API resolves the organization from the token itself. The **project** (needed by the documents module) is also resolved from the token.
+   - `LEDGO_BASE_URL` *(optional)* — Override the API host. Defaults to `https://papi.ledgo.dev` (the SDK appends `/api-v1-new` for API calls; module-specific edge functions use the bare host).
+
+   The **organization** and the **project** (needed by the documents module) are resolved from the token itself, so no organization or project id is needed.
 
 2. **Resources**: Read the relevant resource before using tools from a module:
    - `CONCEPT` — Understanding what LedGo is and does
@@ -25,7 +26,7 @@ You have access to the **LedGo AI Agent Engineering Platform** through this cont
 
 4. **Best practices**:
    - Use `list*` tools first to discover existing entities before creating new ones
-   - All CRUD operations require the organization to be set via environment variables
+   - All CRUD operations are scoped by the integration token: the organization and project are resolved from it.
    - When creating dashboards/forms/databases, consider the schema/field structure carefully
    - Create documents with `documents_create_document_with_blocks` (document + blocks in one transaction); do not create empty documents
    - Add blocks to an existing document with `documents_create_block` (single) or `documents_create_blocks` (several in one transaction)

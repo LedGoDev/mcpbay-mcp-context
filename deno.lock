@@ -1,21 +1,21 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@ledgo/sdk@*": "1.0.5",
-    "npm:zod@*": "4.4.3"
+    "npm:@ledgo/sdk@1.1.0": "1.1.0",
+    "npm:zod@4.6.7": "4.6.7"
   },
   "npm": {
-    "@ledgo/sdk@1.0.5": {
-      "integrity": "sha512-YJCvHDKUKA4F798iOh+VrCo2wrWzeH35Pt/AyWf/rsHL4SOQo8qs1MxGGOOdSwQekhPcSUyxTodaG8KACIkKwg=="
+    "@ledgo/sdk@1.1.0": {
+      "integrity": "sha512-exIK1FNZsFkagXwEt25C3BUNCsisZiSim3NyGKSkhzPArm2cHFLVRhy/v5BCnp6RXbn2A4+Sv4JkrXMKMttDFA=="
     },
-    "zod@4.4.3": {
-      "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="
+    "zod@4.6.7": {
+      "integrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg=="
     }
   },
   "workspace": {
     "dependencies": [
-      "npm:@ledgo/sdk@*",
-      "npm:zod@*"
+      "npm:@ledgo/sdk@1.1.0",
+      "npm:zod@4.6.7"
     ]
   }
 }

@@ -19,20 +19,19 @@ pnpm add @ledgo/sdk
 
 ## Authentication
 
-Initialize the SDK with your organization's integration token:
+Initialize the SDK with your organization's integration token. The host defaults to the stable `https://papi.ledgo.dev` alias (API calls use `/api-v1-new`, while module-specific edge functions use the bare host) and the organization/project are resolved from the token, so no other configuration is required:
 
 ```typescript
 import { LedGoSDK } from '@ledgo/sdk';
 
 const sdk = new LedGoSDK({
-  baseUrl: 'https://api.ledgo.ai',
   token: 'your-integration-token'
 });
 ```
 
-- **baseUrl**: Your LedGo API base URL
 - **token**: Integration token from Organization Settings → Integrations
-- **organizationId** *(optional)*: Your organization's unique ID. If omitted, the API resolves it from the token, so the SDK works without setting it.
+- **baseUrl** *(optional)*: Only needed to target a different deployment. Both `https://papi.ledgo.dev` and the full `https://papi.ledgo.dev/api-v1-new` are accepted.
+- **organizationId** *(deprecated)*: No longer needed; the API resolves it from the token.
 
 ## Basic Usage Examples
 

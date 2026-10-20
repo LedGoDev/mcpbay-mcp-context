@@ -1,6 +1,6 @@
 {
   "imports": {
-    "zod": "npm:zod",
-    "@ledgo/sdk": "npm:@ledgo/sdk"
+    "zod": "npm:zod@4.6.7",
+    "@ledgo/sdk": "npm:@ledgo/sdk@1.1.0"
   }
 }

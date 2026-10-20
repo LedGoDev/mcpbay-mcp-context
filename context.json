@@ -1,6 +1,6 @@
 {
   "name": "ledgo-platform",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Complete LedGo AI Agent Engineering Platform context for LLMs. Provides tools and resources for managing kanbans (including blueprints), forms, databases, diagrams, documents, comments, widgets, and storage via the @ledgo/sdk.",
   "author": "LedGo",
   "tags": [
@@ -19,13 +19,13 @@
       ],
       "allowedExecutables": [],
       "allowedEnvironments": [
-        "LEDGO_BASE_URL",
         "LEDGO_TOKEN",
-        "LEDGO_ORGANIZATION_ID"
+        "LEDGO_BASE_URL"
       ],
       "allowedReadDirs": [],
       "allowedWriteDirs": [],
       "allowNetDomains": [
+        "*.ledgo.dev",
         "*.functions.insforge.app",
         "*.function2.insforge.app"
       ]
@@ -35,18 +35,13 @@
   },
   "variables": [
     {
-      "name": "LEDGO_BASE_URL",
-      "description": "Base URL de la API de LedGo.",
-      "required": true
-    },
-    {
       "name": "LEDGO_TOKEN",
       "description": "Token de integración.",
       "required": true
     },
     {
-      "name": "LEDGO_ORGANIZATION_ID",
-      "description": "ID de la organización. Si se omite, la API lo resuelve desde el token.",
+      "name": "LEDGO_BASE_URL",
+      "description": "Host de la API de LedGo. Solo para apuntar a un deployment distinto; por defecto usa https://papi.ledgo.dev (el SDK agrega /api-v1-new para las llamadas a la API).",
       "required": false
     }
   ]
